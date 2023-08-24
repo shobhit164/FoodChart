@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient( #05161A,#072E33,#0C7076,#0F969C,#6DA5C0,#294D61)
+}
+
+#wrap{
+    color: white;
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    font-family: monospace;
+    padding: 2.5% 4%;
+    background:#0C7076;
+    border-radius: 7px;
+}
+
+#wrap:hover{
+    color:#072E33;
+    cursor: pointer;
+}
