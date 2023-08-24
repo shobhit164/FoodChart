@@ -406,12 +406,18 @@ function ItemsWithCalorieBelow100(){
 }
 ItemsWithCalorieBelow100()
 
-// function ListProteinContentFromHighToLow (){
-//     for(i=0; i<foodOriginalData.length; i++){
-        
-//         const protiens = foodOriginalData[i].protiens;
+
+function ListProteinContentFromHighToLow (){
+   const values = foodOriginalData.sort((a,b) =>  b.protiens - a.protiens);
+   console.log(values)
+
+}
+ListProteinContentFromHighToLow()
 
 
-//     }
-
-// }
+function ListCabContentFromLowToHigh (){
+    const values = foodOriginalData.sort((a,b) => a.cab - b.cab);
+    console.log(values)
+ 
+ }
+ ListCabContentFromLowToHigh()
