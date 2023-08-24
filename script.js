@@ -1,4 +1,4 @@
-const foodOriginalData = [
+let foodOriginalData = [
   {
     "id": 1,
     "foodname": "Apple",
@@ -330,7 +330,7 @@ getallFoodItems()
 
 function getAllVegiesItems(){
     for (let index=0; index<foodOriginalData.length; index++){
-         const category = foodOriginalData[index].category;
+         let category = foodOriginalData[index].category;
         
         if(category === "Vegetable"){
             console.log(foodOriginalData[index]);   
@@ -341,14 +341,14 @@ getAllVegiesItems()
 
 
 function getAllFruitItems(){
-   const fruit = foodOriginalData.filter((items) => items.category === 'Fruit');
+   let fruit = foodOriginalData.filter((items) => items.category === 'Fruit');
    console.log(fruit);
 }
 getAllFruitItems()
 
 
 function getAllProteinItems(){
-    const Protein = foodOriginalData.filter((items) => items.category === 'Protein');
+    let Protein = foodOriginalData.filter((items) => items.category === 'Protein');
     console.log(Protein);
  }
  getAllProteinItems()
@@ -356,7 +356,7 @@ function getAllProteinItems(){
 
 function getAllNutsItems(){
     for( let i=0; i<foodOriginalData.length; i++){
-        const category = foodOriginalData[i].category;
+        let category = foodOriginalData[i].category;
         if( category === 'Nuts'){
             console.log(foodOriginalData[i])
         }
@@ -367,7 +367,7 @@ getAllNutsItems()
 
 
 function getAllGrainItems(){
-   const Grain = foodOriginalData.filter((items) => items.category ==='Grain' );
+   let Grain = foodOriginalData.filter((items) => items.category ==='Grain' );
     console.log(Grain)
 }
 getAllGrainItems()
@@ -375,7 +375,7 @@ getAllGrainItems()
 
 function getAllDairyItems(){
     for(i=0; i<foodOriginalData.length; i++){
-        const category = foodOriginalData[i].category;
+        let category = foodOriginalData[i].category;
         if(category === 'Dairy'){
             console.log(foodOriginalData[i])
         }
@@ -387,7 +387,7 @@ getAllDairyItems()
 
 function ItemsWithCalorieAbove100(){
     for (i=0; i< foodOriginalData.length; i++){
-        const calorie = foodOriginalData[i].calorie;
+        let calorie = foodOriginalData[i].calorie;
         if(calorie > 100){
             console.log(foodOriginalData[i])
         }
@@ -398,7 +398,7 @@ ItemsWithCalorieAbove100()
 
 function ItemsWithCalorieBelow100(){
     for (i=0; i< foodOriginalData.length; i++){
-        const calorie = foodOriginalData[i].calorie;
+        let calorie = foodOriginalData[i].calorie;
         if(calorie < 100){
             console.log(foodOriginalData[i])
         }
@@ -408,7 +408,7 @@ ItemsWithCalorieBelow100()
 
 
 function ListProteinContentFromHighToLow (){
-   const values = foodOriginalData.sort((a,b) =>  b.protiens - a.protiens);
+   let values = foodOriginalData.sort((a,b) =>  b.protiens - a.protiens);
    console.log(values)
 
 }
@@ -416,7 +416,7 @@ ListProteinContentFromHighToLow()
 
 
 function ListCabContentFromLowToHigh (){
-    const values = foodOriginalData.sort((a,b) => a.cab - b.cab);
+    let values = foodOriginalData.sort((a,b) => a.cab - b.cab);
     console.log(values)
  
  }
