@@ -412,7 +412,6 @@ function ListProteinContentFromHighToLow (){
    console.log(values)
 
 }
-ListProteinContentFromHighToLow()
 
 
 function ListCabContentFromLowToHigh (){
@@ -420,4 +419,3 @@ function ListCabContentFromLowToHigh (){
     console.log(values)
  
  }
- ListCabContentFromLowToHigh()
