@@ -325,7 +325,7 @@ function getallFoodItems(){
         console.log(foodOriginalData[index]);
     }
 }
-getallFoodItems()
+// getallFoodItems()
 
 
 function getAllVegiesItems(){
@@ -337,21 +337,21 @@ function getAllVegiesItems(){
         }     
     }
 }
-getAllVegiesItems()
+// getAllVegiesItems()
 
 
 function getAllFruitItems(){
    let fruit = foodOriginalData.filter((items) => items.category === 'Fruit');
    console.log(fruit);
 }
-getAllFruitItems()
+// getAllFruitItems()
 
 
 function getAllProteinItems(){
     let Protein = foodOriginalData.filter((items) => items.category === 'Protein');
     console.log(Protein);
  }
- getAllProteinItems()
+//  getAllProteinItems()
 
 
 function getAllNutsItems(){
@@ -363,14 +363,14 @@ function getAllNutsItems(){
 
     }
 }
-getAllNutsItems()
+// getAllNutsItems()
 
 
 function getAllGrainItems(){
    let Grain = foodOriginalData.filter((items) => items.category ==='Grain' );
     console.log(Grain)
 }
-getAllGrainItems()
+// getAllGrainItems()
 
 
 function getAllDairyItems(){
@@ -382,7 +382,7 @@ function getAllDairyItems(){
 
     }
 }
-getAllDairyItems()
+// getAllDairyItems()
 
 
 function ItemsWithCalorieAbove100(){
@@ -393,7 +393,7 @@ function ItemsWithCalorieAbove100(){
         }
     }
 }
-ItemsWithCalorieAbove100()
+// ItemsWithCalorieAbove100()
 
 
 function ItemsWithCalorieBelow100(){
@@ -404,7 +404,7 @@ function ItemsWithCalorieBelow100(){
         }
     }
 }
-ItemsWithCalorieBelow100()
+// ItemsWithCalorieBelow100()
 
 
 function ListProteinContentFromHighToLow (){
@@ -412,6 +412,7 @@ function ListProteinContentFromHighToLow (){
    console.log(values)
 
 }
+// ListProteinContentFromHighToLow()
 
 
 function ListCabContentFromLowToHigh (){
@@ -419,3 +420,4 @@ function ListCabContentFromLowToHigh (){
     console.log(values)
  
  }
+//  ListCabContentFromLowToHigh()
