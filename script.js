@@ -325,7 +325,7 @@ function getallFoodItems(){
         console.log(foodOriginalData[index]);
     }
 }
-// getallFoodItems()
+getallFoodItems()
 
 
 function getAllVegiesItems(){
@@ -337,21 +337,21 @@ function getAllVegiesItems(){
         }     
     }
 }
-// getAllVegiesItems()
+getAllVegiesItems()
 
 
 function getAllFruitItems(){
    let fruit = foodOriginalData.filter((items) => items.category === 'Fruit');
    console.log(fruit);
 }
-// getAllFruitItems()
+getAllFruitItems()
 
 
 function getAllProteinItems(){
     let Protein = foodOriginalData.filter((items) => items.category === 'Protein');
     console.log(Protein);
  }
-//  getAllProteinItems()
+ getAllProteinItems()
 
 
 function getAllNutsItems(){
@@ -363,14 +363,14 @@ function getAllNutsItems(){
 
     }
 }
-// getAllNutsItems()
+getAllNutsItems()
 
 
 function getAllGrainItems(){
    let Grain = foodOriginalData.filter((items) => items.category ==='Grain' );
     console.log(Grain)
 }
-// getAllGrainItems()
+getAllGrainItems()
 
 
 function getAllDairyItems(){
@@ -382,7 +382,7 @@ function getAllDairyItems(){
 
     }
 }
-// getAllDairyItems()
+getAllDairyItems()
 
 
 function ItemsWithCalorieAbove100(){
@@ -393,7 +393,7 @@ function ItemsWithCalorieAbove100(){
         }
     }
 }
-// ItemsWithCalorieAbove100()
+ItemsWithCalorieAbove100()
 
 
 function ItemsWithCalorieBelow100(){
@@ -404,20 +404,22 @@ function ItemsWithCalorieBelow100(){
         }
     }
 }
-// ItemsWithCalorieBelow100()
+ItemsWithCalorieBelow100()
 
 
 function ListProteinContentFromHighToLow (){
-   let values = foodOriginalData.sort((a,b) =>  b.protiens - a.protiens);
-   console.log(values)
+  let newArr = foodOriginalData.map((items) => items)
+  let values = newArr.sort((a,b) =>  b.protiens - a.protiens);
+  console.log(values)
 
 }
-// ListProteinContentFromHighToLow()
+ListProteinContentFromHighToLow()
 
 
 function ListCabContentFromLowToHigh (){
-    let values = foodOriginalData.sort((a,b) => a.cab - b.cab);
-    console.log(values)
+  let newArr1 = foodOriginalData.map((items) => items)
+  let values = newArr1.sort((a,b) => a.cab - b.cab);
+  console.log(values)
  
  }
-//  ListCabContentFromLowToHigh()
+ ListCabContentFromLowToHigh()
